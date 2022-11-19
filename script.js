@@ -32,3 +32,12 @@ innerContP.textContent = "ME TOO!";
 innerContainer.appendChild(innerContH1);
 innerContainer.appendChild(innerContP);
 container.appendChild(innerContainer);
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+    
+});
+
