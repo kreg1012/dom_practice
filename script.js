@@ -36,7 +36,8 @@ container.appendChild(innerContainer);
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        alert(button.id);
+        if(button.id != 2) alert('you lose');
+        else if (button.id == 2) alert('you win');
     });
     
 });
