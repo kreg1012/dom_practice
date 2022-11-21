@@ -36,7 +36,7 @@ container.appendChild(innerContainer);
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        if(button.id != 2) alert('you lose');
+        if(button.id != 2) alert('you lose');  //loose comparsion bc button id is a string not an integer. 
         else if (button.id == 2) alert('you win');
     });
     
